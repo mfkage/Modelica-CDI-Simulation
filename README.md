@@ -3,9 +3,10 @@
 Modelica Simulation: Elektrosorption | Erstellung eines Ragone-Plots
 -
 
-In der OMNotebook-Datei müssen die Dateipfade und die Dateinamen entsprechend angepasst werden.
+Das Hello-World-Tutorial ist kurz und eignet sich gut um die Grundmechanismen von GitHub kennenzulernen.  
+In der OMNotebook-Datei müssen die Dateipfade und die Dateinamen entsprechend angepasst werden.  
 
-Allgemeine Vorgehensweise bei einer Änderung an einem Modell:
+Allgemeine Vorgehensweise bei Änderungen an einem Modell:
 
 -Branch mit eurem Namen erstellen und die Dateien in diesem Branch verändern **(Nicht die im Master-Branch)**.  
 -Bei jeder Änderung einen Kommentar hinzufügen um die Veränderung nachvollziehen zu können.  
