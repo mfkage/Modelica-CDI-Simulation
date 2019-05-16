@@ -5,7 +5,9 @@ Modelica Simulation: Elektrosorption | Erstellung eines Ragone-Plots
 
 In der OMNotebook-Datei müssen die Dateipfade und die Dateinamen entsprechend angepasst werden.
 
+
 Allgemeine Vorgehensweise:
+
 
 -Branch mit eurem Namen öffnen und die Dateien in diesem Branch verändern.
 
