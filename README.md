@@ -3,7 +3,7 @@
 Modelica Simulation: Elektrosorption | Erstellung eines Ragone-Plots
 -
 
-Das Hello-World-Tutorial ist kurz und eignet sich gut um die Grundmechanismen von GitHub kennenzulernen.  
+Das Hello-World-Tutorial ist kurz und eignet sich gut, um die Grundmechanismen von GitHub kennenzulernen.  
 In der OMNotebook-Datei müssen die Dateipfade und die Dateinamen entsprechend angepasst werden.  
 
 Allgemeine Vorgehensweise bei Änderungen an einem Modell:
