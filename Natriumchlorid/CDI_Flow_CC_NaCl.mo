@@ -1,6 +1,5 @@
 model CDI_Flow_CC_NaCl
   extends Chemical;
-  //Test
   Real n0_CA_Cl(unit = "mol");
   Real n0_CA_Na(unit = "mol");
   Real n0_CC_Cl(unit = "mol");
