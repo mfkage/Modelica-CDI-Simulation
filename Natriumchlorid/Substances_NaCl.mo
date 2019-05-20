@@ -1,5 +1,6 @@
 package Substances_NaCl "Definitions of substances"
   extends Modelica.Icons.Package;
+  //test
   constant Chemical.Interfaces.Incompressible.SubstanceData Carbon_solid(
   MolarWeight = 0.018015, z = 0, DfG_25degC_1bar = 0, Cp = 20.8, gamma = 1) "C(s)";
   
