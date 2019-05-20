@@ -12,5 +12,5 @@ Allgemeine Vorgehensweise bei Änderungen an einem Modell:
 -Bei jeder Änderung einen Kommentar hinzufügen um die Veränderung nachvollziehen zu können.  
 -Pull-Request anfordern, sodass die Änderungen in der aktuellsten Version im "Master-Branch" übernommen werden.  
 -Ein Berechtigter muss die Übernahme der Änderung im Master-Branch genehmigen und mergen.  
--Eigenen Branch nicht löschen um weitere Änderungen vornehmen zu können.  
+-Selbst erstellter Branch kann wieder gelöscht werden.  
 -Änderungen können bei "Commits" im jeweiligen Branch angeschaut werden.  
