@@ -16,7 +16,7 @@ package Substances_MaleicAcid "Definitions of substances"
   MolarWeight = 0.02299, z = 0, DfG_25degC_1bar = -630200, gamma = 55.345);
 
   constant Chemical.Interfaces.Incompressible.SubstanceData Carbon_solid_Ma1(
-  MolarWeight = 0.018015, z = 0, DfG_25degC_1bar = -619355, Cp = 20.8, gamma = 55.345);
+  MolarWeight = 0.018015, z = 0, DfG_25degC_1bar = -589355, Cp = 20.8, gamma = 55.345);
   
   constant Chemical.Interfaces.Incompressible.SubstanceData MaleicAcid1_aqueous(
   MolarWeight = 0.03545, z = -1, DfG_25degC_1bar = -619355, gamma = 55.345);
@@ -38,6 +38,15 @@ package Substances_MaleicAcid "Definitions of substances"
   
   constant Chemical.Interfaces.Incompressible.SubstanceData Sodium_aqueous(
   MolarWeight = 0.02299, z = 1, DfG_25degC_1bar = -261870, gamma = 55.345);
+  
+  constant Chemical.Interfaces.Incompressible.SubstanceData Carbon_solid_Na(
+  MolarWeight = 0.018015, z = 0, DfG_25degC_1bar = -262870, Cp = 20.8, gamma = 55.345);
+  
+  constant Chemical.Interfaces.Incompressible.SubstanceData Chloride_aqueous(
+  MolarWeight = 0.03545, z = -1, DfG_25degC_1bar = -131170, gamma = 55.345);
+  
+  constant Chemical.Interfaces.Incompressible.SubstanceData Carbon_solid_Cl(
+  MolarWeight = 0.018015, z = 0, DfG_25degC_1bar = -132170, Cp = 20.8, gamma = 55.345);
   
   constant Chemical.Interfaces.Incompressible.SubstanceData Water_liquid(
   MolarWeight = 0.018015, DfG_25degC_1bar = -237190, Cp = 75.3);
