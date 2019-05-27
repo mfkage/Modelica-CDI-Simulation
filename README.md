@@ -9,5 +9,5 @@ Allgemeine Vorgehensweise:
 
 - Ihr könnt eure Versionen eines Modells einfach durch Drag & Drop in die entsprechenden Unterordner hochladen.
 - Ändert ihr etwas an einem bereits vorhandenen Modell, kommentiert und begründet eure Änderungen nachvollziehbar.
-- Die durchgeführten Änderungen könnt ihr im Reiter `commits` verfolgen.
+- Die durchgeführten Änderungen können im Reiter `commits` verfolgt werden.
 - Die Kommentare könnt ihr lesen, indem ihr auf `...` neben dem Namen klickt.
