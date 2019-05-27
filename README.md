@@ -1,16 +1,13 @@
 # Elektrosorption
 
-Modelica Simulation: Elektrosorption | Erstellung eines Ragone-Plots
--
+## Modelica Simulation: Elektrosorption |  Ragone-Plot 
 
 Das Hello-World-Tutorial ist kurz und eignet sich gut, um die Grundmechanismen von GitHub kennenzulernen.  
 In der OMNotebook-Datei müssen die Dateipfade und die Dateinamen entsprechend angepasst werden.  
 
-Allgemeine Vorgehensweise bei Änderungen an einem Modell:
+Allgemeine Vorgehensweise:
 
--Branch mit eurem Namen erstellen und die Dateien in diesem Branch verändern **(Nicht die im Master-Branch)**.  
--Bei jeder Änderung einen Kommentar hinzufügen um die Veränderung nachvollziehen zu können.  
--Pull-Request anfordern, sodass die Änderungen in der aktuellsten Version im "Master-Branch" übernommen werden.  
--Ein Berechtigter muss die Übernahme der Änderung im Master-Branch genehmigen und mergen.  
--Selbst erstellter Branch kann wieder gelöscht werden.  
--Änderungen können bei "Commits" im jeweiligen Branch angeschaut werden.  
+-Ihr könnt eure Versionen eines Modells einfach durch Drag & Drop in die entsprechenden Unterordner hochladen. 
+-Ändert ihr etwas an einem bereits vorhandenen Modell, kommentiert und begründet eure Änderungen nachvollziehbar. 
+-Die durchgeführten Änderungen könnt ihr im Reiter `commits` verfolgen. 
+-Die Kommentare könnt ihr lesen, indem ihr auf `...` neben dem Namen klickt.  
