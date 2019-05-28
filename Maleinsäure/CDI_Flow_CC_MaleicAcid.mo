@@ -50,15 +50,15 @@ model CDI_Flow_CC_MaleicAcid
     Placement(visible = true, transformation(origin = {4.44089e-16, 2}, extent = {{-31, -102}, {31, 102}}, rotation = 0)));
   Chemical.Components.Solution anode(ElectricGround = false) annotation(
     Placement(visible = true, transformation(origin = {113, 2}, extent = {{-22, -102}, {22, 102}}, rotation = 0)));
-  Chemical.Components.Substance H2O(amountOfSubstance_start = 0.1111, substanceData = Substances_MaleicAcid.Water_liquid) annotation(
+  Chemical.Components.Substance H2O(amountOfSubstance_start = 0.5982, substanceData = Substances_MaleicAcid.Water_liquid) annotation(
     Placement(visible = true, transformation(origin = {7, -88}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Chemical.Components.Substance Ma2(substanceData = Substances_MaleicAcid.MaleicAcid2_aqueous) annotation(
     Placement(visible = true, transformation(origin = {7, 22}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
-  Chemical.Components.Substance CC_H2O(amountOfSubstance_start = 0.05555, substanceData = Substances_MaleicAcid.Water_liquid) annotation(
+  Chemical.Components.Substance CC_H2O(amountOfSubstance_start = 0.05677, substanceData = Substances_MaleicAcid.Water_liquid) annotation(
     Placement(visible = true, transformation(origin = {-97, -84}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Chemical.Components.Substance CA_Ma2(substanceData = Substances_MaleicAcid.Carbon_solid_Ma2) annotation(
     Placement(visible = true, transformation(origin = {113, 22}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
-  Chemical.Components.Substance CA_H2O(amountOfSubstance_start = 0.05555, substanceData = Substances_MaleicAcid.Water_liquid) annotation(
+  Chemical.Components.Substance CA_H2O(amountOfSubstance_start = 0.05677, substanceData = Substances_MaleicAcid.Water_liquid) annotation(
     Placement(visible = true, transformation(origin = {113, -84}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Chemical.Components.ElectronTransfer electron_c annotation(
     Placement(visible = true, transformation(origin = {-103, -62}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -69,7 +69,7 @@ model CDI_Flow_CC_MaleicAcid
   Modelica.Electrical.Analog.Basic.Capacitor Cap_C(C = 120, v(fixed = true, start = 0)) annotation(
     Placement(visible = true, transformation(origin = {-156, 19}, extent = {{-15, -15}, {15, 15}}, rotation = 90)));
   Modelica.Electrical.Analog.Basic.Capacitor Cap_A(C = 120, v(fixed = true, start = 0)) annotation(
-    Placement(visible = true, transformation(origin = {164, 21}, extent = {{-15, -15}, {15, 15}}, rotation = -90)));
+    Placement(visible = true, transformation(origin = {162, 21}, extent = {{-15, -15}, {15, 15}}, rotation = -90)));
   Chemical.Components.Substance CC_Ma2(substanceData = Substances_MaleicAcid.Carbon_solid_Ma2) annotation(
     Placement(visible = true, transformation(origin = {-103, 22}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Chemical.Components.Substance Ma1(substanceData = Substances_MaleicAcid.MaleicAcid1_aqueous) annotation(
@@ -88,17 +88,17 @@ model CDI_Flow_CC_MaleicAcid
     Placement(visible = true, transformation(origin = {63, -102}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Chemical.Components.Reaction reactionC_Ma2(KC = 1E-8, nP = 2, nS = 1, p = {1, 2}, useKineticsInput = true) annotation(
     Placement(visible = true, transformation(origin = {-51, 22}, extent = {{14, -14}, {-14, 14}}, rotation = 0)));
-  Modelica.Blocks.Sources.Constant const(k = 8.3e-9) annotation(
+  Modelica.Blocks.Sources.Constant const(k = 1.6666667e-8)  annotation(
     Placement(visible = true, transformation(origin = {-23, -220}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Modelica.Blocks.Sources.Constant const1(k = 8.3e-9) annotation(
+  Modelica.Blocks.Sources.Constant const1(k = 1.6666667e-8) annotation(
     Placement(visible = true, transformation(origin = {35, -220}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Chemical.Sensors.MolarConcentrationSensor molarConcentrationSensor1(substanceData = Substances_MaleicAcid.MaleicAcid1_aqueous) annotation(
+  Chemical.Sensors.MolarConcentrationSensor molarConcentrationSensor1(substanceData = Substances_MaleicAcid.MaleicAcid_aqueous) annotation(
     Placement(visible = true, transformation(origin = {53, 122}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Electrical.Analog.Basic.VariableResistor variableResistor1 annotation(
     Placement(visible = true, transformation(origin = {-147, -62}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Electrical.Analog.Basic.VariableResistor variableResistor2 annotation(
     Placement(visible = true, transformation(origin = {149, -62}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Modelica.Blocks.Sources.Constant RC(k = 30) annotation(
+  Modelica.Blocks.Sources.Constant RC(k = 20) annotation(
     Placement(visible = true, transformation(origin = {79, 134}, extent = {{8, -8}, {-8, 8}}, rotation = 0)));
   Modelica.Blocks.Sources.Constant R0(k = 3) annotation(
     Placement(visible = true, transformation(origin = {-95, 130}, extent = {{8, -8}, {-8, 8}}, rotation = 0)));
@@ -108,11 +108,11 @@ model CDI_Flow_CC_MaleicAcid
     Placement(visible = true, transformation(origin = {-127, 124}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Modelica.Blocks.Sources.BooleanPulse booleanPulse1(period = 5000, startTime = 3000, width = 100) annotation(
     Placement(visible = true, transformation(origin = {-63, 184}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Modelica.Electrical.Analog.Sources.TrapezoidCurrent trapezoidCurrent1(I = 0.016, falling = 1, nperiod = 1, period = 6000, rising = 1, startTime = 3000, width = 5998) annotation(
+  Modelica.Electrical.Analog.Sources.TrapezoidCurrent trapezoidCurrent1(I = 0.064, falling = 1, nperiod = 1, period = 6000, rising = 1, startTime = 3000, width = 5998) annotation(
     Placement(visible = true, transformation(origin = {-13, 152}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Electrical.Analog.Ideal.IdealCommutingSwitch idealCommutingSwitch1(Goff = 1E-4, Ron = 0.01) annotation(
     Placement(visible = true, transformation(origin = {31, 152}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
-  Modelica.Electrical.Analog.Basic.Resistor resistor1(R = 130) annotation(
+  Modelica.Electrical.Analog.Basic.Resistor resistor1(R = 80) annotation(
     Placement(visible = true, transformation(origin = {-13, 130}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Electrical.Analog.Basic.Ground ground1 annotation(
     Placement(visible = true, transformation(origin = {19, 178}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -140,7 +140,7 @@ model CDI_Flow_CC_MaleicAcid
     Placement(visible = true, transformation(origin = {-73, -162}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Chemical.Components.Substance H(substanceData = Substances_MaleicAcid.Proton_aqueous)  annotation(
     Placement(visible = true, transformation(origin = {7, -22}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
-  Chemical.Components.Substance OH(substanceData = Substances_MaleicAcid.Hydroxide_aqueous)  annotation(
+  Chemical.Components.Substance OH(amountOfSubstance_start = 0.00019251, substanceData = Substances_MaleicAcid.Hydroxide_aqueous)  annotation(
     Placement(visible = true, transformation(origin = {7, -44}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Chemical.Components.Substance H_out(substanceData = Substances_MaleicAcid.Proton_aqueous)  annotation(
     Placement(visible = true, transformation(origin = {53, -136}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -152,7 +152,7 @@ model CDI_Flow_CC_MaleicAcid
     Placement(visible = true, transformation(origin = {27, -162}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Chemical.Components.Substance H_in(substanceData = Substances_MaleicAcid.Proton_aqueous)  annotation(
     Placement(visible = true, transformation(origin = {-47, -136}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
-  Chemical.Components.Substance OH_in(substanceData = Substances_MaleicAcid.Hydroxide_aqueous)  annotation(
+  Chemical.Components.Substance OH_in(amountOfSubstance_start = 1.7825, substanceData = Substances_MaleicAcid.Hydroxide_aqueous)  annotation(
     Placement(visible = true, transformation(origin = {-21, -136}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Chemical.Components.Stream stream_H_in(AmountOfSolutionIn1L = 55.555, substanceData = Substances_MaleicAcid.Proton_aqueous, useSolutionFlowInput = true)  annotation(
     Placement(visible = true, transformation(origin = {-47, -162}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -162,9 +162,9 @@ model CDI_Flow_CC_MaleicAcid
     Placement(visible = true, transformation(origin = {65, -64}, extent = {{-12, -12}, {12, 12}}, rotation = 0)));
   Chemical.Components.Reaction reaction_diss_Ma2(nP = 2, nS = 1, useKineticsInput = true)  annotation(
     Placement(visible = true, transformation(origin = {65, -78}, extent = {{-12, -12}, {12, 12}}, rotation = 0)));
-  Chemical.Components.Substance Na(substanceData = Substances_MaleicAcid.Sodium_aqueous)  annotation(
+  Chemical.Components.Substance Na(amountOfSubstance_start = 0.00019251, substanceData = Substances_MaleicAcid.Sodium_aqueous)  annotation(
     Placement(visible = true, transformation(origin = {7, 66}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
-  Chemical.Components.Substance Na_in(substanceData = Substances_MaleicAcid.Sodium_aqueous)  annotation(
+  Chemical.Components.Substance Na_in(amountOfSubstance_start = 1.7825, substanceData = Substances_MaleicAcid.Sodium_aqueous)  annotation(
     Placement(visible = true, transformation(origin = {-177, -136}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Chemical.Components.Substance Na_out(substanceData = Substances_MaleicAcid.Sodium_aqueous)  annotation(
     Placement(visible = true, transformation(origin = {183, -136}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -219,8 +219,32 @@ model CDI_Flow_CC_MaleicAcid
   Chemical.Components.Reaction reaction_in_diss_Ma2(nP = 2, nS = 1, useKineticsInput = true)  annotation(
     Placement(visible = true, transformation(origin = {-128, -188}, extent = {{-12, -12}, {12, 12}}, rotation = 0)));
 equation
-  connect(molarConcentrationSensor1.port_a, Ma.port_a) annotation(
-    Line(points = {{64, 122}, {64, 122}, {64, 114}, {-14, 114}, {-14, 0}, {-2, 0}, {-2, 0}}, color = {158, 66, 200}));
+  connect(Ma.port_a, molarConcentrationSensor1.port_a) annotation(
+    Line(points = {{-2, 0}, {-14, 0}, {-14, 114}, {62, 114}, {62, 122}, {64, 122}}, color = {158, 66, 200}));
+  connect(molarConcentrationSensor1.molarConcentration, division1.u2) annotation(
+    Line(points = {{44, 122}, {-48, 122}, {-48, 122}, {-48, 122}}, color = {0, 0, 127}));
+  connect(RC.y, division1.u1) annotation(
+    Line(points = {{70, 134}, {-48, 134}, {-48, 134}, {-48, 134}}, color = {0, 0, 127}));
+  connect(R0.y, add1.u1) annotation(
+    Line(points = {{-104, 130}, {-116, 130}, {-116, 130}, {-114, 130}}, color = {0, 0, 127}));
+  connect(division1.y, add1.u2) annotation(
+    Line(points = {{-72, 128}, {-72, 128}, {-72, 118}, {-114, 118}, {-114, 118}}, color = {0, 0, 127}));
+  connect(add1.y, variableResistor2.R) annotation(
+    Line(points = {{-138, 124}, {-148, 124}, {-148, 110}, {148, 110}, {148, -50}, {150, -50}}, color = {0, 0, 127}));
+  connect(add1.y, variableResistor1.R) annotation(
+    Line(points = {{-138, 124}, {-148, 124}, {-148, -50}, {-146, -50}}, color = {0, 0, 127}));
+  connect(Cap_A.n, variableResistor2.n) annotation(
+    Line(points = {{162, 6}, {162, -62}, {158, -62}}, color = {0, 0, 255}));
+  connect(idealCommutingSwitch1.p, Cap_A.p) annotation(
+    Line(points = {{41, 152}, {162, 152}, {162, 36}}, color = {0, 0, 255}));
+  connect(CA_Na.solution, anode.solution) annotation(
+    Line(points = {{119, 56}, {126, 56}, {126, -98}}, color = {127, 127, 0}));
+  connect(reactionA_Na.products[1], CA_Na.port_a) annotation(
+    Line(points = {{79, 66}, {103, 66}}, color = {158, 66, 200}));
+  connect(CC_OH.solution, cathode.solution) annotation(
+    Line(points = {{-109, -54}, {-85, -54}, {-85, -98}}, color = {127, 127, 0}));
+  connect(reactionC_OH.products[1], CC_OH.port_a) annotation(
+    Line(points = {{-65, -44}, {-93, -44}}, color = {158, 66, 200}));
   connect(reaction_in_diss_Ma2.kineticsCoefficientInput, rrate_A.y) annotation(
     Line(points = {{-136, -184}, {-136, -184}, {-136, -102}, {52, -102}, {52, -102}}, color = {0, 0, 127}));
   connect(reaction_in_diss_Ma1.kineticsCoefficientInput, rrate_A.y) annotation(
@@ -239,8 +263,6 @@ equation
     Line(points = {{-98, -188}, {-84, -188}, {-84, -136}, {-82, -136}}, color = {158, 66, 200}));
   connect(reactionC_OH.substrates[1], OH.port_a) annotation(
     Line(points = {{-37, -44}, {-3, -44}}, color = {158, 66, 200}));
-  connect(reactionC_OH.products[1], CC_OH.port_a) annotation(
-    Line(points = {{-65, -44}, {-79, -44}, {-79, -45}, {-93, -45}}, color = {158, 66, 200}));
   connect(reactionC_OH.kineticsCoefficientInput, rrate_C.y) annotation(
     Line(points = {{-43, -39}, {-32.6, -39}, {-32.6, -102}, {-40, -102}}, color = {0, 0, 127}));
   connect(reactionC_OH.products[2], electron_c.port_a) annotation(
@@ -315,8 +337,6 @@ equation
     Line(points = {{-37, 66}, {-73, 66}, {-73, -62}, {-93, -62}}, color = {158, 66, 200}));
   connect(reactionA_Na.substrates[2], electron_a.port_a) annotation(
     Line(points = {{53, 66}, {87, 66}, {87, -63}, {103, -63}}, color = {158, 66, 200}));
-  connect(reactionA_Na.products[1], CA_Na.port_a) annotation(
-    Line(points = {{79, 66}, {91, 66}, {91, 65}, {103, 65}}, color = {158, 66, 200}));
   connect(reactionA_Na.substrates[1], Na.port_a) annotation(
     Line(points = {{53, 66}, {-3, 66}}, color = {158, 66, 200}));
   connect(reactionA_Na.kineticsCoefficientInput, rrate_C.y) annotation(
@@ -379,24 +399,10 @@ equation
     Line(points = {{-23, 130}, {-23, 152}}, color = {0, 0, 255}));
   connect(resistor1.n, trapezoidCurrent1.n) annotation(
     Line(points = {{-3, 130}, {-3, 152}}, color = {0, 0, 255}));
-  connect(idealCommutingSwitch1.p, Cap_A.p) annotation(
-    Line(points = {{41, 152}, {165, 152}, {165, 36}}, color = {0, 0, 255}));
   connect(idealCommutingSwitch2.n1, idealCommutingSwitch1.n1) annotation(
     Line(points = {{-65, 157}, {-43.5, 157}, {-43.5, 157}, {-22, 157}, {-22, 156}, {-0.5, 156}, {-0.5, 156}, {21, 156}}, color = {0, 0, 255}));
   connect(Cap_C.n, idealCommutingSwitch2.p) annotation(
     Line(points = {{-156, 34}, {-156, 152}, {-85, 152}}, color = {0, 0, 255}));
-  connect(RC.y, division1.u1) annotation(
-    Line(points = {{70.2, 134}, {-48.8, 134}}, color = {0, 0, 127}));
-  connect(R0.y, add1.u1) annotation(
-    Line(points = {{-103.8, 130}, {-114.8, 130}}, color = {0, 0, 127}));
-  connect(molarConcentrationSensor1.molarConcentration, division1.u2) annotation(
-    Line(points = {{43, 122}, {-49, 122}}, color = {0, 0, 127}));
-  connect(division1.y, add1.u2) annotation(
-    Line(points = {{-72, 128}, {-74, 128}, {-74, 118}, {-116, 118}, {-116, 118}}, color = {0, 0, 127}));
-  connect(add1.y, variableResistor2.R) annotation(
-    Line(points = {{-138, 124}, {-148, 124}, {-148, 110}, {148, 110}, {148, -51}}, color = {0, 0, 127}));
-  connect(add1.y, variableResistor1.R) annotation(
-    Line(points = {{-138, 124}, {-147, 124}, {-147, -51}}, color = {0, 0, 127}));
   connect(CL_in.solution, Feed.solution) annotation(
     Line(points = {{-197, -146}, {-45, -146}, {-45, -200}, {-45, -200}}, color = {127, 127, 0}));
   connect(CL_in.port_a, stream_Cl_in.port_b) annotation(
@@ -467,8 +473,6 @@ equation
     Line(points = {{-109, 56}, {-85, 56}, {-85, -98}, {-85, -98}}, color = {127, 127, 0}));
   connect(CC_H.solution, cathode.solution) annotation(
     Line(points = {{-109, -32}, {-85, -32}, {-85, -98}, {-85, -98}}, color = {127, 127, 0}));
-  connect(CC_OH.solution, cathode.solution) annotation(
-    Line(points = {{-109, -54}, {-85, -54}, {-85, -98}, {-85, -98}}, color = {127, 127, 0}));
   connect(Ma2.port_a, stream_Ma2_out.port_b) annotation(
     Line(points = {{-3, 22}, {-15, 22}, {-15, -162}, {121, -162}}, color = {158, 66, 200}));
   connect(reactionA_Ma2.substrates[1], Ma2.port_a) annotation(
@@ -491,8 +495,6 @@ equation
     Line(points = {{57.2, 27.2}, {-32.8, 27.2}, {-32.8, -101.8}, {-39.8, -101.8}}, color = {0, 0, 127}));
   connect(Cap_C.p, variableResistor1.p) annotation(
     Line(points = {{-156, 4}, {-157, 4}, {-157, -62}}, color = {0, 0, 255}));
-  connect(Cap_A.n, variableResistor2.n) annotation(
-    Line(points = {{164, 6}, {162, 6}, {162, -62}, {158, -62}}, color = {0, 0, 255}));
   connect(reactionC_Ma2.products[1], CC_Ma2.port_a) annotation(
     Line(points = {{-65, 22}, {-93, 22}}, color = {158, 66, 200}));
   connect(Ma1.port_a, stream_Ma1_out.port_b) annotation(
@@ -551,8 +553,6 @@ equation
     Line(points = {{-53, -172}, {-45, -172}, {-45, -199}}, color = {127, 127, 0}));
   connect(Na.port_a, stream_Na_out.port_b) annotation(
     Line(points = {{-3, 66}, {-15, 66}, {-15, -162}, {173, -162}}, color = {158, 66, 200}));
-  connect(CA_Na.solution, anode.solution) annotation(
-    Line(points = {{119, 56}, {126, 56}, {126, -98}}, color = {127, 127, 0}));
   connect(stream_OH_in.solution, Feed.solution) annotation(
     Line(points = {{-27, -172}, {-45, -172}, {-45, -199}}, color = {127, 127, 0}));
   connect(OH_in.solution, Feed.solution) annotation(
@@ -626,8 +626,6 @@ equation
     n0_CC_Ma1 = CC_Ma1.amountOfSubstance;
     n0_CC_Ma = CC_Ma.amountOfSubstance;
   end when;
-  
-
 
   n_diff_Ma1 = (CA_Ma1.amountOfSubstance - n0_CA_Ma1 + CC_Ma1.amountOfSubstance - n0_CC_Ma1) * Cal_factor; //[mmol]
   n_diff_Ma2 = (CA_Ma2.amountOfSubstance - n0_CA_Ma2 + CC_Ma2.amountOfSubstance - n0_CC_Ma2) * Cal_factor; //[mmol]
@@ -638,10 +636,9 @@ equation
   Adsorptionszeit = time - trapezoidCurrent1.startTime + 0.0000001; //[s] +0.0000001 weil sonst bei time = 3000 s die Adsorptionszeit 0 beträgt
   ASAR = SAC / Adsorptionszeit; //[mmol/(g*s)]
   
-  //when trapezoidCurrent1.v < (-1.5) then //Wird eine bestimmte Spannung erreicht, so wird die Simulation abgebrochen
-  //  terminate("done");
-  //end when;
-  
+  when trapezoidCurrent1.v < (-10) then //Wird eine bestimmte Spannung erreicht, so wird die Simulation abgebrochen
+    terminate("done");
+  end when;
 //test := val(CA_Ma2.amountOfSubstance, 1000);
   annotation(
     uses(Chemical(version = "1.1.0"), Modelica(version = "3.2.2")),
