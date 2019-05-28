@@ -8,6 +8,6 @@ In der OMNotebook-Datei müssen die Dateipfade und die Dateinamen entsprechend a
 Allgemeine Vorgehensweise:
 
 - Ihr könnt eure Versionen eines Modells einfach durch Drag & Drop in die entsprechenden Unterordner hochladen.
-- Ändert ihr etwas an einem bereits vorhandenen Modell, kommentiert und begründet eure Änderungen nachvollziehbar.
+- Ein bereits vorhandenes Modell könnt ihr verändern, indem ihr eine Datei mit dem gleichen Namen hochlädt. Kommentiert und begründet eure Änderungen, um diese nachvollziehen zu können.
 - Die durchgeführten Änderungen können im Reiter `commits` verfolgt werden.
-- Die Kommentare könnt ihr lesen, indem ihr auf `...` neben dem Namen klickt.
+- Die hinterlegten Kommentare könnt ihr lesen, indem ihr auf `...` neben dem Namen klickt.
