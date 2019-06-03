@@ -1,0 +1,151 @@
+<!DOCTYPE OMNotebook>
+<Notebook>
+  <GroupCell closed="false">
+    <TextCell style="Title">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:10px; margin-bottom:10px; margin-left:10px; margin-right:10px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:38pt; font-weight:600; color:#000000;">Adsorption MaleicAcid - Ragone Plot&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <TextCell style="Subtitle">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Ändern des Directory auf Ort des Modells&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>cd ("C:\\Users\\ukdns\\Documents\\Wolfgang Nguyen\\Hiwi\\Simulation\\MaleicAcid")</Input>
+      <Output>"C:/Users/ukdns/Documents/Wolfgang Nguyen/Hiwi/Simulation/NaCl/Elektrosorption - Wolfgang"</Output>
+    </GraphCell>
+    <GroupCell closed="false">
+      <TextCell style="Subtitle">
+        <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Laden des Modells&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+      </TextCell>
+    </GroupCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>loadFile("Substances_MaleicAcid.mo");
+loadFile("CDI_Flow_CC_MaleicAcid.mo");</Input>
+      <Output>
+OMC-WARNING: 
+"Warning: Requested package Chemical of version 1.1.0, but this package was already loaded with version 1.2.0-alpha. You might experience problems if these versions are incompatible.
+"</Output>
+    </GraphCell>
+    <TextCell style="Subtitle">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Neuer Ergebnisname: Konvention &amp;quot;NaCl_Elektrosorption + Datum&amp;quot;&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <TextCell style="Text">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Times New Roman'; font-size:12pt; color:#000000;">Ein entsprechender Unterordner wird erstellt und die Ergebnisse bekommen den Prefix&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>ErgPrefix := "MaleicAcid_Elektrosorption_190603";</Input>
+      <Output>[done]</Output>
+    </GraphCell>
+    <TextCell style="Subtitle">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Erstellen des Directory für die Ergebnisse&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>ErgPath := "C:\\Users\\ukdns\\Documents\\Wolfgang Nguyen\\Hiwi\\Simulation\\MaleicAcid\\Ergebnis\\"+ErgPrefix;
+mkdir (ErgPath);
+cd (ErgPath);</Input>
+      <Output>[done]</Output>
+    </GraphCell>
+    <TextCell style="Subtitle">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Parametersweep für 16 - 64 mA&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <GraphCell style="Graph" closed="false">
+      <Input>buildModel(CDI_Flow_CC_MaleicAcid, stopTime = 8000, numberOfIntervals = 1000, outputFormat = "mat", variableFilter = ("SAC|ASAR|Adsorptionszeit"));     //Modell wird gebaut und simuliert
+results:="Stromstaerke in A,SAC,ASAR,Adsorptionszeit,\n";      //"results"-Matrix wird erstellt ("/n" bedeutet "next line")
+
+for i in 0.020 : 0.020 : 0.200 loop            //verwendete Stromstärken in A
+  
+  system("CDI_Flow_CC_MaleicAcid.exe -override trapezoidCurrent1.I=" + String(i));    //Die Stromstärke wird hier mit i "überschrieben" (i muss ein String sein)
+  
+  SAC := readSimulationResult("CDI_Flow_CC_MaleicAcid_res.mat", SAC);                 //Die Ergebnis-Datei wird geöffnet und die Werte von SAC werden eingelesen
+  ASAR := readSimulationResult("CDI_Flow_CC_MaleicAcid_res.mat", ASAR);
+  Adsorptionszeit := readSimulationResult("CDI_Flow_CC_MaleicAcid_res.mat", Adsorptionszeit);
+  
+  //results:= results + str_i + "," + String(val(SAC,5000)) + "," + String(val(ASAR,5000)) + ",\n";
+  results := results + String(i) + "," + String(SAC[size(SAC,1),size(SAC,2)]) + "," + String(ASAR[size(ASAR,1),size(ASAR,2)]) + "," + String(Adsorptionszeit[size(Adsorptionszeit,1),size(Adsorptionszeit,2)]) + ",\n";   //Die Matrix "results" wird mit Werten aufgefüllt. Dafür werden (unteranderem) die letzten Werte der SAC- und ASAR-Vektoren genommen und in Strings umgeformt (https://build.openmodelica.org/Documentation/ModelicaReference.Operators.%27size()%27.html)
+  
+  closeSimulationResultFile();          //Die Ergebnis-Datei muss wieder geschlossen werden
+end for;
+
+print(results);                         //"results"-Matrix wird geöffnet
+writeFile("results.csv", results);      //"results"-Matrix wird in eine Excel-Datei eingespeichert</Input>
+      <Output>
+OMC-WARNING: 
+"Warning: Requested package Chemical of version 1.1.0, but this package was already loaded with version 1.2.0-alpha. You might experience problems if these versions are incompatible.
+Warning: Assuming fixed start value for the following 4 variables:
+         n0_CC_Cl:DISCRETE(unit = "mol" fixed = false )  type: Real 
+         n0_CA_Cl:DISCRETE(unit = "mol" fixed = false )  type: Real 
+         n0_CC_Na:DISCRETE(unit = "mol" fixed = false )  type: Real 
+         n0_CA_Na:DISCRETE(unit = "mol" fixed = false )  type: Real
+Warning: Iteration variables with default zero start attribute in torn nonlinear equation system:
+         idealCommutingSwitch2.s2:DUMMY_STATE(unit = "1" protected = true )  "Auxiliary variables" type: Real 
+         idealCommutingSwitch1.s2:DUMMY_STATE(unit = "1" protected = true )  "Auxiliary variables" type: Real 
+         idealCommutingSwitch1.s1:DUMMY_STATE(unit = "1" protected = true )  type: Real 
+         idealCommutingSwitch2.s1:DUMMY_STATE(unit = "1" protected = true )  type: Real
+"</Output>
+    </GraphCell>
+    <TextCell style="Subtitle">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Ausgabe des Ergebnisses&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <GraphCell style="Graph" closed="false">
+      <OMCPlot YLabel="ASAR" Grid="detailed" XLabel="SAC" CurveWidth="3" CurveStyle="1" PlotType="2" XRangeMax="0" Footer="" YRangeMin="0" LogY="false" LegendPosition="right" Title="Ragone Plot Simulation" XRangeMin="0" LogX="false" YRangeMax="0" AutoScale="true">
+        <Curve Visible="true" Color="4294901760" YData="PuEW80h25jU+7OGEjDiqYz72e6HJ2k1APwBZtsz9lpE/BF2wCXKafD8FILgsN96XPwa14eo5cO8/CINBg/z79D8KWKD05WxBPwwoZCkdpkY/De0KYNVNkj8PokSpdl00PxCidA+anWg/EWlZwdqD2Q==" Title="ASAR vs SAC" XData="P6Tcg/n1JAQ/saCm1BS/qz+1zC/u2xSOP7P+qBEroW4/sA+BfUMhvj+Y03i4eIHyP5PXv28WOFE/kYb2KOapFz+QBygSbcDOP43WCYxwvCs/jA/zkwozYD+KkL/WRETTP4k//8pQGss/iA9V3ljmSw=="/>
+      </OMCPlot>
+      <Input>plotParametric(SAC, ASAR, fileName = "results.csv", title = "Ragone Plot Simulation", curveStyle = 1, xLabel = "Salt Adsorption Capacity in mmol/g", yLabel = "Average Salt Adsorption Rate in mmol/(g*s)", curveWidth = 3, legendPosition = "right");</Input>
+      <Output>[done]</Output>
+    </GraphCell>
+  </GroupCell>
+</Notebook>
