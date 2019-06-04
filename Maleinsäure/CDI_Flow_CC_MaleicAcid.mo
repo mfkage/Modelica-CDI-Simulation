@@ -10,6 +10,7 @@ model CDI_Flow_CC_MaleicAcid
   Real n_diff_Ma1(unit = "mol");
   Real n_diff_Ma(unit = "mol");
   Real pH;
+  Real U_max(unit = "V");
   Real SAC(start = 0);
   Real ASAR(start = 0);
   parameter Real m_AK(unit = "g") = 3.32;
@@ -98,7 +99,7 @@ model CDI_Flow_CC_MaleicAcid
     Placement(visible = true, transformation(origin = {-147, -62}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Electrical.Analog.Basic.VariableResistor variableResistor2 annotation(
     Placement(visible = true, transformation(origin = {149, -62}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Modelica.Blocks.Sources.Constant RC(k = 20) annotation(
+  Modelica.Blocks.Sources.Constant RC(k = 10) annotation(
     Placement(visible = true, transformation(origin = {79, 134}, extent = {{8, -8}, {-8, 8}}, rotation = 0)));
   Modelica.Blocks.Sources.Constant R0(k = 3) annotation(
     Placement(visible = true, transformation(origin = {-95, 130}, extent = {{8, -8}, {-8, 8}}, rotation = 0)));
@@ -108,11 +109,11 @@ model CDI_Flow_CC_MaleicAcid
     Placement(visible = true, transformation(origin = {-127, 124}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Modelica.Blocks.Sources.BooleanPulse booleanPulse1(period = 5000, startTime = 3000, width = 100) annotation(
     Placement(visible = true, transformation(origin = {-63, 184}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Modelica.Electrical.Analog.Sources.TrapezoidCurrent trapezoidCurrent1(I = 0.064, falling = 1, nperiod = 1, period = 6000, rising = 1, startTime = 3000, width = 5998) annotation(
+  Modelica.Electrical.Analog.Sources.TrapezoidCurrent trapezoidCurrent1(I = 0.160, falling = 1, nperiod = 1, period = 6000, rising = 1, startTime = 3000, width = 5998) annotation(
     Placement(visible = true, transformation(origin = {-13, 152}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Electrical.Analog.Ideal.IdealCommutingSwitch idealCommutingSwitch1(Goff = 1E-4, Ron = 0.01) annotation(
     Placement(visible = true, transformation(origin = {31, 152}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
-  Modelica.Electrical.Analog.Basic.Resistor resistor1(R = 80) annotation(
+  Modelica.Electrical.Analog.Basic.Resistor resistor1(R = 20) annotation(
     Placement(visible = true, transformation(origin = {-13, 130}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Electrical.Analog.Basic.Ground ground1 annotation(
     Placement(visible = true, transformation(origin = {19, 178}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -632,13 +633,15 @@ equation
   n_diff_Ma = (CA_Ma.amountOfSubstance - n0_CA_Ma + CC_Ma.amountOfSubstance - n0_CC_Ma) * Cal_factor; //[mmol]
   
   pH = -log10(H.a);
+  U_max = 1.2 + (trapezoidCurrent1.I*2);
   SAC = (n_diff_Ma1 + n_diff_Ma2 + n_diff_Ma) / m_AK; //[mmol/g]
   Adsorptionszeit = time - trapezoidCurrent1.startTime + 0.0000001; //[s] +0.0000001 weil sonst bei time = 3000 s die Adsorptionszeit 0 beträgt
   ASAR = SAC / Adsorptionszeit; //[mmol/(g*s)]
-  
-  when trapezoidCurrent1.v < (-10) then //Wird eine bestimmte Spannung erreicht, so wird die Simulation abgebrochen
-    terminate("done");
+
+  when trapezoidCurrent1.v < -(U_max) then //Wird eine bestimmte Spannung erreicht, so wird die Simulation abgebrochen
+  terminate("done");
   end when;
+  
 //test := val(CA_Ma2.amountOfSubstance, 1000);
   annotation(
     uses(Chemical(version = "1.1.0"), Modelica(version = "3.2.2")),
