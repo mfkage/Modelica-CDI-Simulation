@@ -67,9 +67,9 @@ model CDI_Flow_CC_MaleicAcid
     Placement(visible = true, transformation(origin = {113, -62}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Chemical.Components.Reaction reactionA_Ma2(nP = 2, nS = 1, p = {1, 2}, rr(fixed = false), useKineticsInput = true) annotation(
     Placement(visible = true, transformation(origin = {65, 22}, extent = {{-13, -13}, {13, 13}}, rotation = 0)));
-  Modelica.Electrical.Analog.Basic.Capacitor Cap_C(C = 120, v(fixed = true, start = 0)) annotation(
+  Modelica.Electrical.Analog.Basic.Capacitor Cap_C(C = 150, v(fixed = true, start = 0)) annotation(
     Placement(visible = true, transformation(origin = {-156, 19}, extent = {{-15, -15}, {15, 15}}, rotation = 90)));
-  Modelica.Electrical.Analog.Basic.Capacitor Cap_A(C = 120, v(fixed = true, start = 0)) annotation(
+  Modelica.Electrical.Analog.Basic.Capacitor Cap_A(C = 150, v(fixed = true, start = 0)) annotation(
     Placement(visible = true, transformation(origin = {162, 21}, extent = {{-15, -15}, {15, 15}}, rotation = -90)));
   Chemical.Components.Substance CC_Ma2(substanceData = Substances_MaleicAcid.Carbon_solid_Ma2) annotation(
     Placement(visible = true, transformation(origin = {-103, 22}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
