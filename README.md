@@ -26,4 +26,10 @@ You can find 2 types of files:
 ## How to start a simulation
 
 1. Download the [chemical library](https://github.com/MarekMatejak/Chemical)
-2. Start Modelica and load the chemical library by clicking on `data` :+1: `load library` :+1:
+2. Download the substance- and model-file by clicking on the specific file in github and then right-clicking on `raw`
+3. Start OpenModelica and load the chemical library by clicking on `data` :arrow_right: `load library`. Find your folder "Chemical-master" and click through, until you see the folder "Resources"
+4. Load the substance- and model-file by Drag&Drop the files into the left column `library`, where your chemical library is also listed
+5. Open both the model and the substance-file by double-clicking on it
+6. Click on the button `simulation setup` on the top bar
+7. Fill in the desired stop time and amount of steps and press `ok`
+
