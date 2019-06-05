@@ -10,7 +10,6 @@ General procedure:
 - The changes made can be tracked in the tab `commits`.
 - You can read the comments by clicking on `...` next to the name.
 
-
 ## Directory structure
 
 The models are sorted by the adsorption types and substances.
@@ -23,3 +22,6 @@ You can find 2 types of files:
   - "CV" stands for constant-voltage-mode
   - "Ads" stands for adsorption without using any voltage
 - The .onb-files can be opened with OMNotebook. These are "superior" models, with which you can edit the models in OpenModelica temporarily and run it with varied parameters.
+
+## How to start a simulation
+
