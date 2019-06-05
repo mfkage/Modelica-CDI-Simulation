@@ -23,7 +23,7 @@ You can find 2 types of files:
   - "Ads" stands for adsorption without using any voltage
 - The .onb-files can be opened with OMNotebook. These are "superior" models, with which you can edit the models in OpenModelica temporarily and run it with varied parameters.
 
-## How to start a simulation
+## How to start a simulation with OpenModelica
 
 1. Download the [chemical library](https://github.com/MarekMatejak/Chemical)
 2. Download the appropriate substance- and model-file by clicking on the specific file in github and then right-clicking on `raw`
