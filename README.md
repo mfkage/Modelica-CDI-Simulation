@@ -22,5 +22,4 @@ You can find 2 types of files:
   - "CC" stands for constant-current-mode
   - "CV" stands for constant-voltage-mode
   - "Ads" stands for adsorption without using any voltage
-- The .onb-files can be opened with OMNotebook. These are "superior" models, with which you can edit the models in OpenModelica and run it with varied parameters.
-
+- The .onb-files can be opened with OMNotebook. These are "superior" models, with which you can edit the models in OpenModelica temporarily and run it with varied parameters.
