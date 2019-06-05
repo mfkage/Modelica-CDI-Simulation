@@ -25,3 +25,5 @@ You can find 2 types of files:
 
 ## How to start a simulation
 
+1. Download the [chemical library](https://github.com/MarekMatejak/Chemical)
+2. Start Modelica and load the chemical library by clicking on `data` :+1: `load library` :+1:
