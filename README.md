@@ -31,5 +31,5 @@ You can find 2 types of files:
 4. Load the substance- and model-file by Drag&Drop the files into the left column `library`, where your chemical library is also listed
 5. Open both the model and the substance-file by double-clicking on it
 6. Click on the button `simulation setup` on the top bar
-7. Fill in the desired stop time and amount of steps and press `ok`
+7. Fill in the desired stop time (e.g. 8000) and amount of steps (e.g. 1000) and press `ok`. The higher the amount of steps, the longer OpenModelica needs for the simulation
 
