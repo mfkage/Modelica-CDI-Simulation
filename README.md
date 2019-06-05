@@ -15,7 +15,7 @@ General procedure:
 
 The models are sorted by the adsorption types and substances.
 You can find 2 types of files:
-- The .mo-files can be opened with OpenModelica. There are substances-files containing the parameters of the substances used in the model and files containing the model itself. You can identify the type of the model by its filename:
+- The .mo-files can be opened with OpenModelica. There are substances-files, containing the parameters of the substances used in the model and files, containing the model itself. You can identify the type of the model by its filename:
   - "CDI" stands for Capacitive Deionization
   - "Flow" stands for a flow-through experiment
   - "Batch" stands for a batch experiment
