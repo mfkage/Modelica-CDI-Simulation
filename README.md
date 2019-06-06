@@ -7,6 +7,7 @@ The Hello-World-Tutorial is quick to do and works well to learn the basics of Gi
 General procedure:
 - You can upload your versions of a model by Drag&Drop to the corresponding subfolder
 - An already existing model can be changed/replaced by uploading a file with the same filename. Please comment and reason your changes, so others can understand
+- If you are not sure, if your changes should overwrite the original version, create your own branch, make your changes in the new branch and open a pull request
 - The changes made can be tracked in the tab `commits`
 - You can read the comments by clicking on `...` next to the name
 
