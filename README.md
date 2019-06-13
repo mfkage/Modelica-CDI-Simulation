@@ -5,6 +5,7 @@
 The Hello-World-Tutorial is quick to do and works well to learn the basics of GitHub. 
 
 General procedure:
+- To create a new folder, follow the steps described [here](https://github.com/KirstieJane/STEMMRoleModels/wiki/Creating-new-folders-in-GitHub-repository-via-the-browser)
 - You can upload your versions of a model by Drag&Drop to the corresponding subfolder
 - An already existing model can be changed/replaced by uploading a file with the same filename. Please comment and reason your changes, so others can understand
 - When you are not sure, if your changes should overwrite the original version, create your own branch, make your changes in the new branch and open a pull request
