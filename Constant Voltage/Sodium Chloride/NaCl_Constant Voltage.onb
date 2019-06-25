@@ -1,0 +1,151 @@
+<!DOCTYPE OMNotebook>
+<Notebook>
+  <GroupCell closed="false">
+    <TextCell style="Title">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:10px; margin-bottom:10px; margin-left:10px; margin-right:10px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:38pt; font-weight:600; color:#000000;">Electrosorption NaCl - Constant Voltage&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <TextCell style="Subtitle">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Changing directory to the location of the model&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <GraphCell closed="false" style="Graph">
+      <Input>cd ("C:\\Users\\ukdns\\Documents\\Wolfgang Nguyen\\Hiwi\\Simulation\\NaCl\\Elektrosorption - Wolfgang")</Input>
+      <Output>"C:/Users/ukdns/Documents/Wolfgang Nguyen/Hiwi/Simulation/NaCl/Elektrosorption - Wolfgang"</Output>
+    </GraphCell>
+    <GroupCell closed="false">
+      <TextCell style="Subtitle">
+        <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Loading model&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+      </TextCell>
+    </GroupCell>
+    <GraphCell closed="false" style="Graph">
+      <Input>loadFile("Substances_NaCl.mo");
+loadFile("CDI_Flow_CV_NaCl_WN.mo");</Input>
+      <Output>
+OMC-WARNING: 
+"Warning: Requested package Chemical of version 1.1.0, but this package was already loaded with version 1.2.0-alpha. You might experience problems if these versions are incompatible.
+"</Output>
+    </GraphCell>
+    <TextCell style="Subtitle">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Name for folder for results: &amp;quot;NaCl_Constant Voltage + Datum&amp;quot;&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <TextCell style="Text">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Times New Roman'; font-size:12pt; color:#000000;">Creating of an appropriate subfolder + results getting a prefix&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <GraphCell closed="false" style="Graph">
+      <Input>ErgPrefix := "NaCl_Constant Voltage_190429";</Input>
+      <Output>[done]</Output>
+    </GraphCell>
+    <TextCell style="Subtitle">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Creating directory for results&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <GraphCell closed="false" style="Graph">
+      <Input>ErgPath := "C:\\Users\\ukdns\\Documents\\Wolfgang Nguyen\\Hiwi\\Simulation\\NaCl\\Ergebnis\\"+ErgPrefix;
+mkdir (ErgPath);
+cd (ErgPath);</Input>
+      <Output>[done]</Output>
+    </GraphCell>
+    <TextCell style="Subtitle">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Parametersweep for 0.1 - 1.2 V&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <GraphCell closed="false" style="Graph">
+      <Input>buildModel(CDI_Flow_CV_NaCl_WN, stopTime = 7200, numberOfIntervals = 1000, outputFormat = "mat", variableFilter = ("SAC|ASAR|offset|V"));     //Modell wird gebaut und simuliert
+results:="Spannung in V,SAC,ASAR,offset,V,\n";      //"results"-Matrix wird erstellt ("/n" bedeutet "next line")
+
+for i in 0.1 : 0.1 : 1.2 loop            //verwendete Stromstärken in A
+  //system("CDI_Flow_CV_NaCl_WN -override stepVoltage1.offset=" + String(i));    //Die Spannung wird hier mit i "überschrieben" (i muss ein String sein)
+  system("CDI_Flow_CV_NaCl_WN -override=stepVoltage1.V=" + String(i));
+  
+  SAC := readSimulationResult("CDI_Flow_CV_NaCl_WN_res.mat", SAC);                 //Die Ergebnis-Datei wird geöffnet und die Werte von SAC werden eingelesen
+  ASAR := readSimulationResult("CDI_Flow_CV_NaCl_WN_res.mat", ASAR);
+  V := readSimulationResult("CDI_Flow_CV_NaCl_WN_res.mat", V);
+  offset := readSimulationResult("CDI_Flow_CV_NaCl_WN_res.mat", offset);
+
+  
+  //results:= results + str_i + "," + String(val(SAC,5000)) + "," + String(val(ASAR,5000)) + ",\n";
+  results := results + String(i) + "," + String(SAC[size(SAC,1),size(SAC,2)]) + "," + String(ASAR[size(ASAR,1),size(ASAR,2)]) + "," + String(offset[size(offset,1),size(offset,2)]) + "," + String(V[size(V,1),size(V,2)]) + ",\n";   //Die Matrix "results" wird mit Werten aufgefüllt. Dafür werden (unteranderem) die letzten Werte der SAC- und ASAR-Vektoren genommen und in Strings umgeformt (https://build.openmodelica.org/Documentation/ModelicaReference.Operators.%27size()%27.html)
+
+  closeSimulationResultFile();          //Die Ergebnis-Datei muss wieder geschlossen werden
+end for;
+
+print(results);                         //"results"-Matrix wird geöffnet
+writeFile("results.csv", results);      //"results"-Matrix wird in eine Excel-Datei eingespeichert</Input>
+      <Output>
+OMC-WARNING: 
+"Warning: Requested package Chemical of version 1.1.0, but this package was already loaded with version 1.2.0-alpha. You might experience problems if these versions are incompatible.
+Warning: Assuming fixed start value for the following 4 variables:
+         n0_CC_Cl:DISCRETE(unit = "mol" fixed = false )  type: Real 
+         n0_CA_Cl:DISCRETE(unit = "mol" fixed = false )  type: Real 
+         n0_CC_Na:DISCRETE(unit = "mol" fixed = false )  type: Real 
+         n0_CA_Na:DISCRETE(unit = "mol" fixed = false )  type: Real
+Warning: Iteration variables with default zero start attribute in torn nonlinear equation system:
+         CA_Cl.z:DUMMY_STATE(unit = "1" protected = true )  "Charge number of ion" type: Real 
+         CA_Na.z:DUMMY_STATE(unit = "1" protected = true )  "Charge number of ion" type: Real
+"</Output>
+    </GraphCell>
+    <TextCell style="Subtitle">
+      <Text>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+&lt;table border="0" style="-qt-table-type: root; margin-top:5px; margin-bottom:5px; margin-left:5px; margin-right:5px;">
+&lt;tr>
+&lt;td style="border: none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Arial'; font-size:24pt; font-style:italic; color:#000000;">Ausgabe des Ergebnisses&lt;/span>&lt;/p>&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html></Text>
+    </TextCell>
+    <GraphCell closed="false" style="Graph">
+      <Input>plot(SAC, fileName = "results.csv");</Input>
+      <Output>
+OMC-ERROR: 
+"[1:1-1:34] Error: Klasse plot konnte nicht im Geltungsbereich von &lt;global scope> (looking for a function or record) gefunden werden.
+"</Output>
+    </GraphCell>
+  </GroupCell>
+</Notebook>
