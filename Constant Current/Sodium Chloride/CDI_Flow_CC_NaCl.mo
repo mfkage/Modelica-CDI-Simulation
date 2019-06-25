@@ -102,9 +102,9 @@ model CDI_Flow_CC_NaCl
     Placement(visible = true, transformation(origin = {-58, 74}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Modelica.Blocks.Math.Add add1(k1 = 1) annotation(
     Placement(visible = true, transformation(origin = {-126, 80}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
-  Modelica.Blocks.Sources.BooleanPulse booleanPulse1(period = 5000, startTime = 3000, width = 100) annotation(
+  Modelica.Blocks.Sources.BooleanPulse booleanPulse1(period = 5000, startTime = 3600, width = 100) annotation(
     Placement(visible = true, transformation(origin = {-86, 172}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Modelica.Electrical.Analog.Sources.TrapezoidCurrent trapezoidCurrent1(I = 0.016, falling = 1, nperiod = 1, period = 6000, rising = 1, startTime = 3000, width = 5998) annotation(
+  Modelica.Electrical.Analog.Sources.TrapezoidCurrent trapezoidCurrent1(I = 0.016, falling = 1, nperiod = 1, period = 6000, rising = 1, startTime = 3600, width = 5998) annotation(
     Placement(visible = true, transformation(origin = {-36, 140}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Electrical.Analog.Ideal.IdealCommutingSwitch idealCommutingSwitch1(Goff = 1E-4, Ron = 0.01) annotation(
     Placement(visible = true, transformation(origin = {8, 140}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
@@ -277,7 +277,7 @@ equation
     Line(points = {{-12, -22}, {0, -22}, {0, -103}}, color = {127, 127, 0}));
   connect(H2O.solution, bulk.solution) annotation(
     Line(points = {{-10, -100}, {-2, -100}, {-2, -103}, {0, -103}}, color = {127, 127, 0}));
-  when sample(3000, 10000) then
+  when sample(3600, 10000) then
 //Adsorbierte Stoffmenge ohne angelegte Spannung. Intervall muss länger sein als die Adsorptionszeit
     n0_CA_Cl = CA_Cl.amountOfSubstance;
     n0_CA_Na = CA_Na.amountOfSubstance;
