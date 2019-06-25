@@ -102,7 +102,7 @@ model CDI_Flow_CV_NaCl
     Placement(visible = true, transformation(origin = {-58, 74}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
   Modelica.Blocks.Math.Add add1(k1 = 1) annotation(
     Placement(visible = true, transformation(origin = {-126, 80}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
-  Modelica.Blocks.Sources.BooleanPulse booleanPulse1(period = 8000, startTime = 1, width = 100) annotation(
+  Modelica.Blocks.Sources.BooleanPulse booleanPulse1(period = 8000, startTime = 3600, width = 100) annotation(
     Placement(visible = true, transformation(origin = {-86, 172}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Electrical.Analog.Ideal.IdealCommutingSwitch idealCommutingSwitch1(Goff = 1E-4, Ron = 0.01) annotation(
     Placement(visible = true, transformation(origin = {8, 140}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
@@ -114,7 +114,7 @@ model CDI_Flow_CV_NaCl
     Placement(visible = true, transformation(origin = {-98, 140}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Electrical.Analog.Basic.Resistor resistor2(R = 10000) annotation(
     Placement(visible = true, transformation(origin = {-30, 176}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Modelica.Electrical.Analog.Sources.TrapezoidVoltage trapezoidVoltage1(V = 0, falling = 1, nperiod = 1, period = 8000, rising = 1, startTime = 1, width = 7998)  annotation(
+  Modelica.Electrical.Analog.Sources.TrapezoidVoltage trapezoidVoltage1(V = 0.1, falling = 1, nperiod = 1, period = 3600, rising = 1, startTime = 3600, width = 3598)  annotation(
     Placement(visible = true, transformation(origin = {-40, 140}, extent = {{10, -10}, {-10, 10}}, rotation = 0)));
 equation
   connect(resistor1.p, trapezoidVoltage1.n) annotation(
@@ -278,7 +278,7 @@ equation
   connect(H2O.solution, bulk.solution) annotation(
     Line(points = {{-10, -100}, {-2, -100}, {-2, -103}, {0, -103}}, color = {127, 127, 0}));
   
-  when sample(0, 10000) then //Adsorbierte Stoffmenge ohne angelegte Spannung. Intervall muss länger sein als die Adsorptionszeit
+  when sample(3600, 11000) then //Adsorbierte Stoffmenge ohne angelegte Spannung. Intervall muss länger sein als die Adsorptionszeit
     n0_CA_Cl = CA_Cl.amountOfSubstance;
     n0_CA_Na = CA_Na.amountOfSubstance;
     n0_CC_Cl = CC_Cl.amountOfSubstance;
@@ -287,11 +287,9 @@ equation
   
   n_diff_Na = (CA_Na.amountOfSubstance - n0_CA_Na + CC_Na.amountOfSubstance - n0_CC_Na) * Cal_factor; //[mmol]
 //n_diff_Cl = (CA_Cl.amountOfSubstance - n0_CA_Cl + CC_Cl.amountOfSubstance - n0_CC_Cl) * Cal_factor; //[mmol]
-
   SAC = n_diff_Na / m_AK; //[mmol/g]
   Adsorptionszeit = time - trapezoidVoltage1.startTime + 0.0000001; //[s] +0.0000001 weil sonst bei time = 3000 s die Adsorptionszeit 0 beträgt
-  ASAR = SAC / Adsorptionszeit; //[mmol/(g*s)]
-//test := val(CA_Cl.amountOfSubstance, 1000);
+  ASAR = SAC / Adsorptionszeit; //[mmol/(g*s)] //test := val(CA_Cl.amountOfSubstance, 1000);
   annotation(
     uses(Chemical(version = "1.1.0"), Modelica(version = "3.2.2")),
     Diagram(coordinateSystem(extent = {{-250, -250}, {250, 200}})),
