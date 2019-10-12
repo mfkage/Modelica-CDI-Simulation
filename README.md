@@ -42,11 +42,10 @@ You can find 2 types of files:
 - You can change between a graphical view an a text view. On the graphical interface you can build your model by drag & drop the components from your libraries. On the text interface you can add specific calculations (e.g. pH = -log10(H.a);)
 - By right-clicking on the components in the graphical interface and `documentation`or `open class` you can see information about the components for example how they are structured or where to find them
 - In the substances-file you can define your substances:
-    constant Chemical.Interfaces.Incompressible.SubstanceData Carbon_solid_H(
-    MolarWeight = 0.018015, z = 0, DfG_25degC_1bar = 0, Cp = 20.8, gamma = 55.345) "C_H(s)";
+  - constant Chemical.Interfaces.Incompressible.SubstanceData Carbon_solid_H(MolarWeight = 0.018015, z = 0, DfG_25degC_1bar = 0, Cp = 20.8, gamma = 55.345) "C_H(s)";
 - If something is wrong, error messages will appear on the bottom side. A simulation should never last longer then 3 minutes. To speed it up, you should make the model less complex or decrease the amount of simulation steps
     
-## How to save data
+## How to plot and save data
 
 - After you run a simulation successfully, the plotting section appears
 - On the right side you can see all calculated parameters
