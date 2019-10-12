@@ -50,5 +50,5 @@ You can find 2 types of files:
 - After you run a simulation successfully, the plotting section appears
 - On the right side you can see all calculated parameters
 - Ticked parameters are plotted over time
-- you can create new plot windows and also new parametric plot windows, where the first ticked parameter is on the x-axis and the second one on the y-axis
+- You can create new plot windows and also new parametric plot windows, where the first ticked parameter is on the x-axis and the second one on the y-axis
 - To save parameters stay in the normal plot window and tick the desired parameters. Then press `CSV` on the top side to export the variables. In a seperate Excel-file you can extract the parameters.
