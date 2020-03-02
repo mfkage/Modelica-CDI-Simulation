@@ -1,4 +1,4 @@
-# Modelica Simulation
+# CDI Simulation
 
 ## Introduction
 
