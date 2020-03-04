@@ -1,0 +1,15 @@
+package Substances_enhanced "Definitions of substances"
+  extends Modelica.Icons.Package;
+  constant Chemical.Interfaces.Incompressible.SubstanceData Carbon_solid(MolarWeight = 0.0035515, z = 0, DfG_25degC_1bar = 0, Cp = 20.8, gamma = 55.345, References = {"http://www.vias.org/genchem/standard_enthalpies_table.html, http://www.update.uu.se/~jolkkonen/pdf/CRC_TD.pdf"}) "C(s)";
+  constant Chemical.Interfaces.Incompressible.SubstanceData Carbon_solid_Na(MolarWeight = 0.035010, z = 0, DfG_25degC_1bar = -260870, Cp = 20.8, gamma = 55.345, References = {"http://www.vias.org/genchem/standard_enthalpies_table.html, http://www.update.uu.se/~jolkkonen/pdf/CRC_TD.pdf"}) "C_Na(s)";
+  constant Chemical.Interfaces.Incompressible.SubstanceData Sodium_aqueous(MolarWeight = 0.02299, z = 1, DfG_25degC_1bar = -261870, gamma = 55.345, References = {"http://www.vias.org/genchem/standard_enthalpies_table.html"}) "Na+(aq)";
+  constant Chemical.Interfaces.Incompressible.SubstanceData Carbon_solid_H(MolarWeight = 0.013010, z = 0, DfG_25degC_1bar = -0, Cp = 20.8, gamma = 55.345, References = {"http://www.vias.org/genchem/standard_enthalpies_table.html, http://www.update.uu.se/~jolkkonen/pdf/CRC_TD.pdf"}) "C_H(s)";
+  constant Chemical.Interfaces.Incompressible.SubstanceData Proton_aqueous(MolarWeight = 0.001007, z = 1, DfG_25degC_1bar = 0, gamma = 55.345, References = {"http://www.vias.org/genchem/standard_enthalpies_table.html"}) "H+(aq)";
+  // as hypothetical HA <-> H+ + A- simplification of H2O + HA <-> H3O+ + A-";
+  constant Chemical.Interfaces.Incompressible.SubstanceData Carbon_solid_Cl(MolarWeight = 0.047461, z = 0, DfG_25degC_1bar = -130170, Cp = 20.8, gamma = 55.345, References = {"http://www.vias.org/genchem/standard_enthalpies_table.html, http://www.update.uu.se/~jolkkonen/pdf/CRC_TD.pdf"}) "C_Cl(s)";
+  constant Chemical.Interfaces.Incompressible.SubstanceData Chloride_aqueous(MolarWeight = 0.03545, z = -1, DfG_25degC_1bar = -131170, gamma = 55.345, References = {"http://www.vias.org/genchem/standard_enthalpies_table.html"}) "Cl-(aq)";
+  constant Chemical.Interfaces.Incompressible.SubstanceData Carbon_solid_OH(MolarWeight = 0.029011, z = 0, DfG_25degC_1bar = -157300, Cp = 20.8, gamma = 55.345, References = {"http://www.vias.org/genchem/standard_enthalpies_table.html, http://www.update.uu.se/~jolkkonen/pdf/CRC_TD.pdf"}) "C_OH(s)";
+  constant Chemical.Interfaces.Incompressible.SubstanceData Hydroxide_aqueous(MolarWeight = 0.017006, z = -1, DfG_25degC_1bar = -157300, gamma = 55.345, References = {"http://www.vias.org/genchem/standard_enthalpies_table.html"}) "OH-(aq)";
+  constant Chemical.Interfaces.Incompressible.SubstanceData Electrone_solid(MolarWeight = 5.4857990946e-7, z = -1, DfG_25degC_1bar = 0, Cp = 0, References = {"http://physics.nist.gov/cgi-bin/cuu/Value?mme, To solve standard electo-chemical cell potentials"}) "e-(s)";
+  constant Chemical.Interfaces.Incompressible.SubstanceData Water_liquid(MolarWeight = 0.018015, DfG_25degC_1bar = -237190, Cp = 75.3, References = {"http://www.vias.org/genchem/standard_enthalpies_table.html"}) "H2O(l)";
+end Substances_enhanced;
