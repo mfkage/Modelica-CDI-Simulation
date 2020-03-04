@@ -51,3 +51,4 @@ package Substances_MaleicAcid "Definitions of substances"
   constant Chemical.Interfaces.Incompressible.SubstanceData Water_liquid(
   MolarWeight = 0.018015, DfG_25degC_1bar = -237190, Cp = 75.3);
 end Substances_MaleicAcid;
+
